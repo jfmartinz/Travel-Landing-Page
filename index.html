@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelBuddy - Book your dream vacation today!</title>
+    <meta name="description" content="Travel Buddy - Book your dream vacation today!">
+    <title>Travel Buddy - Book your dream vacation today!</title>
 
     <!-- CSS  -->
     <link rel="stylesheet" href="styles/hero.css">
@@ -24,9 +25,495 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Vollkorn&display=swap"
         rel="stylesheet">
 
+    <!-- Google Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Box icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="boxicons.min.css">
+
+    <!-- Slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 </head>
 
 <body>
+
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <h3>travel <span class="h3-highlight">buddy</span></h3>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about-us">about us</a></li>
+                    <li class="dropdown" onclick="toggleDropdown()">
+                        <a onclick="" class="dropbtn">destination <span
+                                class="material-symbols-outlined">expand_more</span></a>
+                        <div id="menuList" class="dropdown-content">
+                            <a target="_blank" rel="noopener" href="https://www.lonelyplanet.com/africa">Africa</a>
+                            <a target="_blank" rel="noopener"
+                                href="https://www.lonelyplanet.com/antarctica">Antartica</a>
+                            <a target="_blank" rel="noopener" href="https://www.lonelyplanet.com/asia">Asia</a>
+                            <a target="_blank" rel="noopener" href="https://www.lonelyplanet.com/europe">Europe</a>
+                            <a target="_blank" rel="noopener" href="#https://www.lonelyplanet.com/pacific">Pacific</a>
+                            <a target="_blank" rel="noopener" href="https://www.lonelyplanet.com/north-america">North
+                                America</a>
+                        </div>
+                    </li>
+                    <li><a href="#book">book now</a></li>
+                </ul>
+
+
+                <section class="nav-btns">
+                    <button class="btn1" type="button" title="Login">login</button>
+                    <button class="btn2" type="button" title="Sign Up">sign up</button>
+                </section>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="main">
+            <section class="main-contents">
+                <h1>Book your dream <br><span class="h1-highlight">vacation</span> today!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur. Sodales eu eu quis<br> bibendum laoreet quis placerat.
+                </p>
+                <a href="https://www.lonelyplanet.com/places" target="_blank" rel="noopener"><button type="button"
+                        href="https://www.lonelyplanet.com/places">explore
+                        now</button></a>
+            </section>
+            <section class="main-img">
+                <div class="grid">
+                    <div><img src="images/geoffroy-hauwen-min.jpg" alt="Geoffroy Hauwen"></div>
+                    <div><img src="images/pietro-de-grandi-min.jpg" alt="Pietro De Grandi"></div>
+                    <div><img src="images/luca-bravo-min.jpg" alt="Luca Bravo"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="container">
+        <section class="book" id="book">
+            <div class="book-container">
+                <div class="box">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <div>
+                        <select name="places" id="place" title="places">
+                            <option value="">Location</option>
+                            <option value="Naga City, Philippines">Naga City, Philippines</option>
+                            <option value="Boracay, Philippines">Boracay, Philippines</option>
+                            <option value="New Delhi, India">New Delhi, India</option>
+                            <option value="Calaug, Philippines">Calaug, Philippines</option>
+                            <option value="Paris, France">Paris, France</option>
+                            <option value="Bombay, India">Bombay, India</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="box">
+                    <span class="material-symbols-outlined">
+                        calendar_today
+                    </span>
+                    <input type="date" name="book-date" title="book-date" value="2023-10-08">
+                </div>
+                <div class="box">
+                    <span class="material-symbols-outlined">
+                        attach_money
+                    </span>
+                    <div>
+                        <select name="cost" id="price" title="price">
+                            <option value="">Price</option>
+                            <option value="1000-5000$">1000-5000$</option>
+                            <option value="500-1000$">500-1000$</option>
+                            <option value="100-500$">100-500$</option>
+                            <option value="1500-1800$">1500$-1800$</option>
+                            <option value="5,000-10,000$">5,000-10,000%</option>
+                            <option value="15,000-20,000$">15,000-20,000$</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit">book now</button>
+            </div>
+        </section>
+    </div>
+
+    <section class="about" id="about-us">
+        <div class="about-texts">
+            <h2>about us</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio magni voluptates similique? Voluptatem
+                fugiat
+                odit, possimus officiis doloremque, doloribus et.
+            </p>
+        </div>
+    </section>
+
+    <section class="destination">
+        <div class="container">
+            <h2>popular destination</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>Provident, accusantium?</p>
+            <div class="boxes slider">
+                <div class="box">
+                    <a target="_blank" rel="noopener"
+                        href="https://www.google.com/search?q=rome+italy&oq=rome+italy&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABixAxiABDINCAIQABiDARixAxiABDINCAMQLhiDARixAxiABDIHCAQQABiABDIHCAUQLhiABDIHCAYQABiABDIGCAcQRRg80gEIMTcxNmowajSoAgCwAgA&sourceid=chrome&ie=UTF-8"><img
+                            src="images/fabio-fistarol-min.jpg" alt="Rome, Italy">
+                    </a>
+
+                    <div class="texts">
+                        <div class="upper">
+                            <h5>rome, italy</h5>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <p>4.5 (5.5k)</p>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                            <p>italy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <a target="_blank" rel="noopener"
+                        href="https://www.google.com/search?q=boracay&oq=bora&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxiKBTIJCAAQIxgnGIoFMg8IARAuGEMYgwEYsQMYigUyBggCEEUYOTIbCAMQLhhDGIMBGK8BGMcBGLEDGIoFGJgFGJoFMgkIBBAAGEMYigUyDwgFEC4YQxiDARixAxiKBTIMCAYQLhhDGLEDGIoFMg8IBxAuGEMYgwEYsQMYigUyCQgIEAAYQxiKBTIJCAkQABhDGIoF0gEIMTgwN2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8s">
+                        <img src="images/sean-oulashin-min.jpg" alt="Boracay, Philippines"></a>
+
+
+                    <div class="texts">
+                        <div class="upper">
+                            <h5>boracay</h5>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <p>3.5 (1.5k)</p>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                            <p>philippines</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <a target="_blank" rel="noopener"
+                        href="https://www.google.com/search?q=moraine+lake&oq=mor&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxiKBTIJCAAQIxgnGIoFMgkIARAuGEMYigUyCQgCEAAYQxiKBTIGCAMQRRg5MgYIBBBFGDwyBggFEEUYPTIGCAYQRRg9MgYIBxBFGD3SAQc5NDZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"><img
+                            src="images/garrett-parker-min.jpg" alt="Moraine Lake, USA">
+                    </a>
+                    <div class="texts">
+                        <div class="upper">
+                            <h5>moraine lake</h5>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <p>4.5 (3.5k)</p>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                            <p>USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <a target="_blank" rel="noopener"
+                        href="https://www.google.com/search?q=palawan&oq=palawa&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxiKBTIJCAAQIxgnGIoFMg8IARAuGEMYgwEYsQMYigUyBggCEEUYOTIPCAMQABhDGIMBGLEDGIoFMgkIBBAuGEMYigUyDwgFEC4YQxiDARixAxiKBTIJCAYQABhDGIoFMgkIBxAAGEMYigUyCQgIEC4YQxiKBTIJCAkQLhhDGIoF0gEHNjUzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"><img
+                            src="images/cris-tagupa-min.jpg" alt="Palawan, Philippines">
+                    </a>
+                    <div class="texts">
+                        <div class="upper">
+                            <h5>palawan</h5>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <p>4.5 (5.5k)</p>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                            <p>philippines</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <a target="_blank" rel="noopener"
+                        href="https://www.google.com/search?q=venice+river+evening&oq=venice+river+evening&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg70gEHMTAwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"><img
+                            src="images/federico-beccari-min.jpg" alt="Venice River Evening, Germany">
+                    </a>
+                    <div class="texts">
+                        <div class="upper">
+                            <h5>venice river evening</h5>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <p>4.8 (15k)</p>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                            <p>italy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <a target="_blank" rel="noopener"
+                        href="https://www.google.com/search?q=abisko+national+park+&sca_esv=572530057&sxsrf=AM9HkKnPP6ss-RDHiSJQhxKvqIJSgEGSNQ%3A1697029836117&ei=zJ4mZafgBo36seMPi7GRuAQ&ved=0ahUKEwin9rfkiO6BAxUNfWwGHYtYBEcQ4dUDCBA&uact=5&oq=abisko+national+park+&gs_lp=Egxnd3Mtd2l6LXNlcnAiFWFiaXNrbyBuYXRpb25hbCBwYXJrIDIHECMYigUYJzIEECMYJzIFEAAYgAQyCBAAGIoFGJECMgUQABiABDIFEAAYgAQyCBAAGIoFGJECMgUQABiABDIFEAAYgAQyBRAAGIAESIQFUIsDWIsDcAF4AZABAJgB5AGgAeQBqgEDMi0xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA-IDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp"><img
+                            src="images/david-becker-min.jpg" alt="Abisko National Park, Sweden">
+                    </a>
+                    <div class="texts">
+                        <div class="upper">
+                            <h5>abisko national park</h5>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <p>4.5 (38k)</p>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                            <p>sweden</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="whychoose">
+        <div class="container">
+
+            <div class="whychoose-header">
+                <h2>why choose travel buddy?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero at alias, facere modi ut nobis
+                    dicta<br>
+                    nam
+                    natus dolor quod blanditiis architecto id et sunt.</p>
+            </div>
+
+            <div class="whychoose-container">
+                <div class="card-container">
+                    <div class="card">
+                        <span class="material-symbols-outlined">
+                            language
+                        </span>
+                        <div class="content">
+                            <h3>Your Global Adventures Await!</h3>
+                            <p>Explore the globe with us, as we take
+                                you to the most captivating destinations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="material-symbols-outlined">
+                            travel
+                        </span>
+                        <div class="content">
+                            <h3>Seamless Journey, From Takeoff to Touchdown</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto ullam unde quia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="material-symbols-outlined">
+                            credit_score
+                        </span>
+                        <div class="content">
+                            <h3>Travel Assurance</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto ullam unde quia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="customer">
+        <div class="container">
+            <h2>our customers say<br> about us</h2>
+
+
+            <div class="customer-container slider">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <img src="images/irene-min.png" alt="irene">
+                        </div>
+                        <div class="custom-contents">
+                            <h3>layla stone</h3>
+                            <h4>business consultant</h4>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima porro voluptates
+                        perferendis! Hic ipsa sequi tempore earum assumenda ea?</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <img src="images/michael-min.png" alt="michael-min">
+                        </div>
+                        <div class="custom-contents">
+                            <h3>rares diana</h3>
+                            <h4>car dealer</h4>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima porro voluptates
+                        perferendis! Hic ipsa sequi tempore earum assumenda ea?</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <img src="images/charles-etoroma-min.png" alt="charles">
+                        </div>
+                        <div class="custom-contents">
+                            <h3>marilena romeo</h3>
+                            <h4>climber</h4>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima porro voluptates
+                        perferendis! Hic ipsa sequi tempore earum assumenda ea?</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <img src="images/kelly-sikkema-min.png" alt="kelly sikkema">
+                        </div>
+                        <div class="custom-contents">
+                            <h3>kelly sikkema</h3>
+                            <h4>web developer</h4>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima porro voluptates
+                        perferendis! Hic ipsa sequi tempore earum assumenda ea?</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <img src="images/sergio-de-paula-min.png" alt="sergio de paula">
+                        </div>
+                        <div class="custom-contents">
+                            <h3>sergio de paula</h3>
+                            <h4>software engineer</h4>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima porro voluptates
+                        perferendis! Hic ipsa sequi tempore earum assumenda ea?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Subscribe and get exclusive<br> deals & offer</h2>
+
+
+                <div class="input">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                    <input type="text" title="Enter your Email" placeholder="Enter your Email">
+                    <button type="submit" title="Subscribe">Subscribe</button>
+                </div>
+                <img src="images/Coconut Cocktail.png" class="coconut-tree" alt="Coconuet tree">
+                <img src="images/Palm Tree.png" class="coconut-juice" alt="Coconuet juice">
+            </div>
+
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="col1">
+                    <h3>travel <span>buddy</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, minus.</p>
+                </div>
+                <div class="col2">
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 1</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 2</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 3</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 4</a></li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 5</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 6</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 7</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 8</a></li>
+                    </ul>
+                </div>
+                <div class="col4">
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 9</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 10</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 11</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 12</a></li>
+                    </ul>
+                </div>
+                <div class="col5">
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 13</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Lorem 14</a></li>
+                    </ul>
+                    &nbsp;
+                    <div class="icons">
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-linkedin'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023 Joseph Martin</p>
+    </footer>
+
+
+
+    <script src="main.js"></script>
+
+    <!-- boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- slick slider -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $('.slider').slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true
+        });
+    </script>
 
 </body>
 
