@@ -1,0 +1,109 @@
+.customer {
+    padding: 5rem 0;
+}
+
+.customer h2 {
+    font-size: var(--text-2xl);
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem 0;
+}
+
+.customer-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #f5f7ff;
+    border-radius: 10px;
+}
+
+.customer .customer-container img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.customer .customer-container .card {
+    padding: 2rem 0.75rem;
+    -webkit-box-shadow: -3px 7px 12px -2px rgba(109, 109, 109, 0.57);
+    -moz-box-shadow: -3px 7px 12px -2px rgba(109, 109, 109, 0.57);
+    box-shadow: -3px 7px 12px -2px rgba(109, 109, 109, 0.57);
+    border-radius: 10px;
+    position: relative;
+    max-width: 350px;
+    margin-right: 2.5rem;
+}
+
+.customer .customer-container .divider::before {
+    content: '';
+    position: absolute;
+    border: 1px solid #979797;
+    width: 90%;
+    top: 48%;
+    left: 5%;
+}
+
+.customer .customer-container .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.customer .customer-container h3 {
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.customer .customer-container h4 {
+    text-transform: capitalize;
+    font-family: 'Vollkorn', serif;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.customer .customer-container .custom-contents {
+    margin-left: 1.5rem;
+}
+
+.customer .customer-container p {
+    opacity: 0.8;
+}
+
+
+
+.slick-track {
+    padding: 4rem;
+}
+
+.slick-prev {
+    position: absolute;
+    top: -12%;
+    right: 9%;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: var(--main-color);
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+}
+
+.slick-next {
+    position: absolute;
+    top: -12%;
+    right: 2%;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: var(--main-color);
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+}
+
+.slick-prev:active,
+.slick-next:active {
+    background-color: #4f66f8;
+}

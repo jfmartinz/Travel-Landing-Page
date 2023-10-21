@@ -1,10 +1,58 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #ffffff;
+    --secondary-color: #2d74ff;
+    --accent-color: #000638;
+
+    --other1: #f5f7ff;
+    --other2: #434655;
+
+    --black: #000;
+
+    /* font sizes */
+
+    --text-xs: 0.75rem;
+    /* Equivalent to 12px */
+    --text-sm: 0.875rem;
+    /* Equivalent to 14px */
+    --text-base: 1rem;
+    /* Equivalent to 16px */
+    --text-lg: 1.125rem;
+    /* Equivalent to 18px */
+    --text-xl: 1.25rem;
+    /* Equivalent to 20px */
+    --text-2xl: 1.5rem;
+    /* Equivalent to 24px */
+    --text-3xl: 1.875rem;
+    /* Equivalent to 30px */
+    --text-4xl: 2.25rem;
+    /* Equivalent to 36px */
+    --text-5xl: 3rem;
+    /* Equivalent to 48px */
+    --text-6xl: 3.75rem;
+    /* Equivalent to 60px */
+    --text-7xl: 4.5rem;
+    /* Equivalent to 72px */
+    --text-8xl: 6rem;
+    /* Equivalent to 96px */
+    --text-9xl: 8rem;
+    /* Equivalent to 128px */
 }
 
 /* 
 font-family: 'Poppins', sans-serif;
 font-family: 'Vollkorn', serif;
 */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}

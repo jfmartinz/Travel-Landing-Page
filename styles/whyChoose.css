@@ -1,0 +1,62 @@
+.whychoose {
+    background-color: var(--secondary-color);
+    padding: 4rem 0;
+}
+
+.whychoose .whychoose-header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.whychoose .whychoose-header h2 {
+    text-transform: capitalize;
+    color: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--text-2xl);
+}
+
+.whychoose .whychoose-header p {
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-color);
+    font-size: var(--text-base);
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.whychoose-container {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.whychoose-container .card-container {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.whychoose-container .card {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+.whychoose-container .card .content {
+    font-family: 'Poppins', sans-serif;
+    margin: 1rem 1.5rem 0;
+}
+
+.whychoose-container .card .content h3 {
+    text-transform: capitalize;
+}
+
+.whychoose-container .card .content p {
+    font-weight: 300;
+    padding: 0 0.75rem;
+    margin-top: 1rem;
+}
+
+.whychoose-container .card .material-symbols-outlined {
+    font-size: 70px;
+    color: var(--secondary-color);
+}
